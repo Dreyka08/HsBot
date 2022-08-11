@@ -12,6 +12,8 @@ def mach():
             _x, _y = x.topleft
             x.resizeTo(X_SIZE, Y_SIZE)
             # fight3(_x, _y, x.width, x.height, 2)
+            pyautogui.click(_x + (80 / 752) * x.width, _y + (254 / 508) * x.height)
+            time.sleep(0.5)
             pyautogui.click(_x + (200 / 752) * x.width, _y + (200 / 508) * x.height)
             time.sleep(0.5)
             pyautogui.click(_x + (600 / 752) * x.width, _y + (400 / 508) * x.height)
